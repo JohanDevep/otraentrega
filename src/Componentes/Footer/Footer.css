@@ -1,39 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 .footer {
+  align-items: center;
+  background-color: var(--artyClick-crimson);
+  display: flex;
+  padding: 24px;
+  justify-content: space-between;
+  color: #412a56;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.FundaSoft {
+  display: flex;
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+
+
+.politicas {
+  display: flex;
+  justify-content: space-around;
+  flex: 2;
+}
+
+.pie-de-pagina .text-wrapper-2 {
+  /* font-family: "Assistant", Helvetica; */
+  line-height: normal;
+  text-decoration-line: underline;
+}
+
+@media (max-width: 600px) {
+
+  .footer{
+    align-items: flex-start;
+    text-align: start;
+    gap: 24px;
+  }
+
+  .politicas,
+  .footer,
+  .FundaSoft {
+    flex-direction: column;
     align-items: center;
-    background-color: #df007ac9;
-    display: flex;
-    gap: 692px;
+    text-align: center;
   }
-  .container {
-    align-items: center;
-    display: flex;
-    flex: 0 0 auto;
-    gap: 10px;
-  }
-  .text-wrapper {
-   
-    color: #412a56;
-    font-family: "Assistant", Helvetica;
-    font-size: 20px;
-    font-weight: 400;
-  }
-  .politicas {
-    align-items: center;
-    display: flex;
-    flex: 0 0 auto;
-    gap: 30px;
-    left: -520px;
-    margin-right: -21px;
-    position: relative;
-  }
-  .pie-de-pagina .text-wrapper-2 {
-    color: #412a56;
-    font-family: "Assistant", Helvetica;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-decoration-line: underline;
-  }
+}
